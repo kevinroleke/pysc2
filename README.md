@@ -72,15 +72,16 @@ be used as a shortcut to `python -m pysc2.bin.play`.
 Alternatively you can install latest PySC2 codebase from git master branch:
 
 ```shell
-$ pip install --upgrade https://github.com/deepmind/pysc2/archive/master.zip
+$ pip install --upgrade https://github.com/deepmind/pysc2/archive/master.zip "protobuf<=3.20.3"
 ```
 
 or from a local clone of the git repo:
 
 ```shell
-$ git clone https://github.com/deepmind/pysc2.git
-$ pip install --upgrade pysc2/
+$ pip install -e . "protobuf<=3.20.3"
 ```
+
+Pinning `protobuf<=3.20.3` is required for compatibility with `s2clientprotocol`.
 
 ## Get StarCraft II
 
