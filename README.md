@@ -55,10 +55,11 @@ You can reach us at [pysc2@deepmind.com](mailto:pysc2@deepmind.com).
 The easiest way to get PySC2 is to use pip:
 
 ```shell
-$ pip install pysc2
+$ pip install pysc2 "protobuf<=3.20"
 ```
 
 That will install the `pysc2` package along with all the required dependencies.
+A protobuf pin (`protobuf<=3.20`) is required to avoid descriptor errors with the generated protocol buffer code.
 [virtualenv](https://pypi.python.org/pypi/virtualenv) can help manage your
 dependencies. You may also need to upgrade pip: `pip install --upgrade pip`
 for the `pysc2` install to work. If you're running on an older system you may
@@ -72,14 +73,14 @@ be used as a shortcut to `python -m pysc2.bin.play`.
 Alternatively you can install latest PySC2 codebase from git master branch:
 
 ```shell
-$ pip install --upgrade https://github.com/deepmind/pysc2/archive/master.zip
+$ pip install --upgrade https://github.com/deepmind/pysc2/archive/master.zip "protobuf<=3.20"
 ```
 
 or from a local clone of the git repo:
 
 ```shell
 $ git clone https://github.com/deepmind/pysc2.git
-$ pip install --upgrade pysc2/
+$ pip install --upgrade pysc2/ "protobuf<=3.20"
 ```
 
 ## Get StarCraft II
